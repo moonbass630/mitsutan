@@ -45,7 +45,7 @@ add_action('admin_enqueue_scripts', function(){
 //CSSを読み込む
 add_action('admin_enqueue_style', function(){
   wp_enqueue_style(
-    'mitsu-stylesheet',//キューを登録する、”common”はいろんなところで使われる名前だから危険
+    'mitsu-stylesheets',//キューを登録する、”common”はいろんなところで使われる名前だから危険
     plugins_url('css/stylesheet.css', __FILE__),
     array(),
     false,
